@@ -33,7 +33,7 @@ img {
     margin-right: 10px;
 }
 
-.localidade {
+.igreja {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -41,8 +41,16 @@ img {
     gap: 20px;
 }
 
-.texto-localidade {
+.texto-igreja {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
+
+.link {
+    background: none;  
+    border: none;       
+    color: rgb(0, 0, 0);        
+    cursor: pointer;   
+    font-size: 18px;
+  }
