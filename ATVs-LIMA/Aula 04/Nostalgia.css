@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: black;
+}
+
+.galeria {
+     background-color: #1E90FF;
+     width: 300px;
+     height: auto;
+     align-items: center;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     margin: 10px;
+     padding: 15px;
+     border-radius: 10px;
+     transition: transform 0.3s;
+}
+
+.galeria:hover{
+    padding: 15px;
+    transform: scale(1.05);
+}
+
+.galeria img{
+    height: 100px;
+    width: 180px;
+    object-fit: cover;
+    margin-top: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.galeria h3 {
+    margin: 5px 0;
+    font-family: "Press Start 2P", system-ui;
+    color: #FF69B4;
+     text-shadow:
+        -1px -1px 0 #FFFF00,
+         1px -1px 0 #FFFF00,
+        -1px  1px 0 #FFFF00,
+         1px  1px 0 #FFFF00;
+}
+
+.galeria p {
+    margin: 3px 0;
+    font-size: 14px;
+    font-family: 'Luckiest Guy', cursive;
+    color: #FFFF00;
+}
+
+
+h1{
+    color: #FFFF00;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 22px;
+}
+
+h2 {
+    color: #FF69B4;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 18px;
+}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+

@@ -1,0 +1,26 @@
+h1{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    margin-right: 30px;
+    height: 150px;
+}
+h1:hover{
+    color: white;
+    background-color: black;
+    padding: 15px;
+}
+h2{
+    color: darkmagenta;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    margin-left: 30px;
+    height: 120px;
+}
+h2:hover{
+    color: darkmagenta;
+    background-color: black;
+    padding: 15px;
+}
