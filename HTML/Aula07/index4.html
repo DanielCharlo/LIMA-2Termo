@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Cards Espaçosos</title>
+  <style>
+    body {
+      overflow-x: hidden;
+      background-color: #fff; /* Fundo branco */
+      color: #000; /* Texto padrão preto */
+    }
+
+    .card-cover {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .text-shadow-1 {
+      text-shadow: 0 .05rem .1rem rgba(0,0,0,.3);
+    }
+
+    .card-body {
+      background: rgba(0,0,0,0.3); /* Fundo semi-transparente para o texto */
+      border-radius: 0 0 .5rem .5rem;
+      color: #fff;
+    }
+
+    /* Centralizar o conteúdo da newsletter */
+    .newsletter-container {
+      text-align: center;
+    }
+
+    .newsletter-container .d-flex {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .newsletter-container input {
+      max-width: 300px;
+    }
+
+    /* Centralizar o copyright no footer */
+    .footer-bottom {
+      text-align: center;
+    }
+
+    /* Header nav links */
+    header .nav-link.active {
+      background-color: #e9ecef;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="d-flex justify-content-center py-3">
+  <ul class="nav nav-pills">
+    <li class="nav-item"><a href="#" class="nav-link active">Lar</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">Características</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">Preços</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">Perguntas frequentes</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+  </ul>
+</header>
+
+<!-- Cards -->
+<div class="container py-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <div class="col">
+      <div class="card card-cover text-white shadow-lg rounded-4" style="background-image: url('Inemafoo.png');">
+        <div class="card-body text-shadow-1 p-4">
+          <h3 class="fw-bold">Inemafoo</h3>
+          <p>Inemafoo é um popular YouTuber brasileiro, conhecido por seus vídeos de gameplay, vlogs e conteúdos de Minecraft, com milhões de fãs engajados.</p>
+          <ul class="d-flex list-unstyled mt-auto mb-0">
+            <li class="me-auto"><img src="youtube.png" width="32" height="32" class="rounded-circle border border-white"></li>
+            <li class="d-flex align-items-center me-3"><small>Youtube</small></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card card-cover text-white shadow-lg rounded-4" style="background-image: url('Eduk.png');">
+        <div class="card-body text-shadow-1 p-4">
+          <h3 class="fw-bold">Mano Amenic</h3>
+          <p>Edukof é um criador de conteúdo dedicado a jogos e entretenimento, compartilhando dicas, tutoriais e momentos divertidos com sua comunidade.</p>
+          <ul class="d-flex list-unstyled mt-auto mb-0">
+            <li class="me-auto"><img src="youtube.png" width="32" height="32" class="rounded-circle border border-white"></li>
+            <li class="d-flex align-items-center me-3"><small>Youtube</small></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card card-cover text-white shadow-lg rounded-4" style="background-image: url('Renato garcia.png');">
+        <div class="card-body text-shadow-1 p-4">
+          <h3 class="fw-bold">Renato Garcia</h3>
+          <p>Renato Garcia é um influenciador digital brasileiro, conhecido por seu canal "Renato Garcia YT" no YouTube, onde compartilha aventuras com motos, carros e vlogs emocionantes.</p>
+          <ul class="d-flex list-unstyled mt-auto mb-0">
+            <li class="me-auto"><img src="youtube.png" width="32" height="32" class="rounded-circle border border-white"></li>
+            <li class="d-flex align-items-center me-3"><small>Youtube</small></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="py-5">
+  <div class="container-fluid px-0">
+    <div class="row gx-0 justify-content-center">
+
+      <div class="col-6 col-md-2 mb-3 text-center text-md-start">
+        <h5>Seção</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Lar</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Características</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Preços</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Perguntas frequentes</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Sobre</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 mb-3 newsletter-container">
+        <form>
+          <h5>Assine nossa newsletter</h5>
+          <p>Resumo mensal das novidades e conteúdos interessantes que temos para você.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2 justify-content-center">
+            <label for="newsletter1" class="visually-hidden">Endereço de email</label>
+            <input id="newsletter1" type="email" class="form-control" placeholder="Endereço de email">
+            <button class="btn btn-primary" type="button">Inscrever-se</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom py-4 my-4 border-top">
+      © 2025 Company, Inc. Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
