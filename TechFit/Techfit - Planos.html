@@ -7,38 +7,99 @@
     <title>TechFit - Planos</title>
 </head>
 <body>
-    <header>
+<header>
     <div class="cabecalho">
         <div class="botoes">
-      <button>INICIO</button>
-      <button>CONTATO</button>
-      <button>PLANOS</button>
-      <button>AGENDAR AULAS</button>
+            <button>INICIO</button>
+            <button>CONTATO</button>
+            <button>PLANOS</button>
+            <button>AGENDAR AULAS</button>
         </div>
-    <img src="/Fotos/Menu.png" alt="Menu" class="menu-icon">
-        </div>
-    </header>
+        <!-- Ícone do menu -->
+        <img src="/TechFit/Fotos/Menu.png" alt="Menu" class="menu-icon" id="menu-btn">
+    </div>
+
+    <!-- Menu dropdown -->
+    <div id="menu-dropdown" class="menu-abrir">
+        <button>Login</button>
+        <button>Cadastro</button>
+        <button>Suporte</button>
+    </div>
+</header>
+
 
 
     <main>
-    <h1>PLANOS</h1>
+        <h1>PLANOS</h1>
 
-    <div class="principal">
-        <div class="card">
-            <h2>Plano Basico</h2>
-            <img src="/Fotos/Plano Basico.png" alt="Planos">
-        </div>
-        
-        <div class="card">
-            <h2>Plano Intermediario</h2>
-            <img src="/Fotos/Plano intermediario.png" alt="Planos">
-        </div>
+        <div class="principal">
 
-        <div class="card">
-            <h2>Plano Avançado</h2>
-            <img src="/Fotos/Plano avançado.png" alt="Planos">
-    </div>
-</main>
+            <!-- Card Básico -->
+            <div class="card">
+                <h2>Plano Básico</h2>
+                <img src="/TechFit/Fotos/plano_basico_corrigido.png" alt="Plano Básico">
+                <div class="pagamentos">
+                    <h3>Formas de Pagamento</h3>
+                    <div class="icones">
+                        <img src="/TechFit/Icones/Cartao.png" alt="Cartão">
+                        <img src="/TechFit/Icones/pix.png" alt="Pix">
+                        <button>$MENSAL</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Intermediário -->
+            <div class="card">
+                <h2>Plano Intermediário</h2>
+                <img src="/TechFit/Fotos/plano_intermediario_correcao_alguma.png" alt="Plano Intermediário">
+                <div class="pagamentos">
+                    <h3>Formas de Pagamento</h3>
+                    <div class="icones">
+                        <img src="/TechFit/Icones/Cartao.png" alt="Cartão">
+                        <img src="/TechFit/Icones/pix.png" alt="Pix">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Avançado -->
+            <div class="card">
+                <h2>Plano Avançado</h2>
+                <img src="/TechFit/Fotos/plano_avancado_corrigido.png" alt="Plano Avançado">
+                <div class="pagamentos">
+                    <h3>Formas de Pagamento</h3>
+                    <div class="icones">
+                        <img src="/TechFit/Icones/Cartao.png" alt="Cartão">
+                        <img src="/TechFit/Icones/pix.png" alt="Pix">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <h3>Desenvolvido por: Daniel Charlo e Maria</h3>
+        <a href="https://github.com/MariaEduarda-Nepo/Projeto.git"><img src="/TechFit/Icones/Github.png" alt="github" width="30px"></a>
+    </footer>
+
+<script>
+
+    const menuBtn = document.getElementById('menu-btn');
+    const menuDropdown = document.getElementById('menu-dropdown');
+
+    menuBtn.addEventListener('click', (e) => {
+        menuDropdown.classList.toggle('show');
+            e.stopPropagation();
+    });
+
+document.addEventListener('click', (e) => {
+    if (!menuDropdown.contains(e.target) && !menuBtn.contains(e.target)) {
+        menuDropdown.classList.remove('show');
+    }
+});
+
+</script>
+
 
 
 </body>

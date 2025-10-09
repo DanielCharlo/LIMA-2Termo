@@ -1,0 +1,47 @@
+div.quadrado {
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+#q1 {
+    background-color: rgb(210, 210, 210);
+}
+#q2 {
+    background-image: linear-gradient(to bottom, black, rgb(246, 246, 246));
+    background-image: radial-gradient(to);
+}
+#q3 {
+    background-image: url(/Fotos/Surfista_Prateado.png);
+    background-size:cover;
+    background-position: right;    
+}
+body {
+    background-color: rgb(159, 141, 141);
+    background-image: url();
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: black url('https://tribunademinas.com.br/colunas/maistendencias/wp-content/uploads/2025/01/Fatos-intrigantes-sobre-o-universo-que-poucos-conhecem.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;                 
+    justify-content: center;       
+    align-items: center;           
+    height: 97vh;
+}
+div#dentro {
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+div#fora {
+    height: 10vh;
+    background-color: red;
+    position: relative;
+}
