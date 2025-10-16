@@ -15,26 +15,25 @@
             <button>PLANOS</button>
             <button>AGENDAR AULAS</button>
         </div>
-        <!-- Ícone do menu -->
+
         <img src="/TechFit/Fotos/Menu.png" alt="Menu" class="menu-icon" id="menu-btn">
     </div>
 
-    <!-- Menu dropdown -->
     <div id="menu-dropdown" class="menu-abrir">
-        <button>Login</button>
-        <button>Cadastro</button>
-        <button>Suporte</button>
+        <div id="menu-dropdown" class="menu-abrir">
+    <button id="btn-login">Login</button>
+    <button id="btn-cadastro">Cadastro</button>
+    <button id="btn-suporte">Suporte</button>
+</div>
+
     </div>
 </header>
-
-
 
     <main>
         <h1>PLANOS</h1>
 
         <div class="principal">
 
-            <!-- Card Básico -->
             <div class="card">
                 <h2>Plano Básico</h2>
                 <img src="/TechFit/Fotos/plano_basico_corrigido.png" alt="Plano Básico">
@@ -97,6 +96,11 @@ document.addEventListener('click', (e) => {
         menuDropdown.classList.remove('show');
     }
 });
+
+document.getElementById('btn-cadastro').addEventListener('click', () => {
+    window.location.href = 'cadastro.html';
+});
+
 
 </script>
 
